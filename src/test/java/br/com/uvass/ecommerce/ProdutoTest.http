@@ -1,0 +1,61 @@
+POST http://localhost:8080/produto
+Content-Type: application/json
+
+{
+  "id": 2,
+  "nome": "PC Gaming",
+  "descricao": "PC de alto desempenho",
+  "fotoUrl": "https://image.made-in-china.com/2f0j10DkYUmGbqbecW/Hot-Sales-Tempered-Cool-Modern-Special-Desktop-PC-Gaming-Computer-Case-for-Internet-Cafes-Bar-E-Sport.jpg",
+  "dataCadastro": "2021-04-02",
+  "valorUnitario": "7000.0"
+}
+
+###
+
+GET http://localhost:8080/produto?nome=PC%20Gaming
+Accept: application/json
+
+###
+
+POST http://localhost:8080/produto
+Content-Type: application/json
+
+{
+  "id": 3,
+  "nome": "Tablet Samsung",
+  "descricao": "Tablet para trabalho",
+  "fotoUrl": "https://a-static.mlcdn.com.br/618x463/tablet-samsung-galaxy-tab-a7-104-4g-wi-fi-64gb-android-octa-core-cam-8mp-selfie-5mp/magazineluiza/226924300/1674465670c03557d1f1c64353570345.jpg",
+  "dataCadastro": "2018-03-20",
+  "valorUnitario": "1200.0"
+}
+
+###
+
+GET http://localhost:8080/produto?valorMinimo=900.0&valorMaximo=4000.0
+Accept: application/json
+
+###
+
+POST http://localhost:8080/produto
+Content-Type: application/json
+
+{
+  "id": 4,
+  "nome": "Ipad Pro",
+  "descricao": "Ipad da Apple",
+  "fotoUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-2020-hero-space-cell-select?wid=1716&hei=2000&fmt=jpeg&qlt=95&.v=1598915071000",
+  "dataCadastro": "2021-05-16",
+  "valorUnitario": "1000.0"
+}
+
+###
+
+GET http://localhost:8080/produto?nome=Ipad%20Pro&valorMinimo=500.0&valorMaximo=1200.0
+Accept: application/json
+
+###
+
+GET http://localhost:8080/produto/3
+Accept: application/json
+
+###

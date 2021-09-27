@@ -1,0 +1,19 @@
+GET http://localhost:8080/categoria/1
+Accept: application/json
+
+###
+
+GET http://localhost:8080/categoria/1/produto?nome=TVSamsung&valorMinimo=1800.0&valorMaximo=3000.0
+Accept: application/json
+
+###
+
+GET http://localhost:8080/categoria/1/produto?nome=TVSamsung
+Accept: application/json
+
+###
+
+GET http://localhost:8080/categoria/1/produto?valorMinimo=1600.0&valorMaximo=2600.0
+Accept: application/json
+
+###
