@@ -45,4 +45,7 @@ public class Categoria {
         return listaProdutos;
     }
 
+    public void setListaProdutos(List<Produto> listaProdutos) {
+        this.listaProdutos = listaProdutos;
+    }
 }

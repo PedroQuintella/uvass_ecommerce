@@ -10,8 +10,8 @@ public class PromocaoItem {
     private Float valorPromocao;
     private LocalDate dataCadastro;
     private Timestamp dataUltimaAtualizacao;
-    private Produto produto;
-    private TabelaPromocao tabelaPromocao;
+    private Integer id_tabelaPromocao;
+    private Integer id_produto;
 
     public Integer getId() {
         return id;
@@ -47,19 +47,19 @@ public class PromocaoItem {
         this.dataUltimaAtualizacao = dataUltimaAtualizacao;
     }
 
-    public Produto getProduto() {
-        return produto;
+    public Integer getId_tabelaPromocao() {
+        return id_tabelaPromocao;
     }
 
-    public void setProduto(Produto produto) {
-        this.produto = produto;
+    public void setId_tabelaPromocao(Integer id_tabelaPromocao) {
+        this.id_tabelaPromocao = id_tabelaPromocao;
     }
 
-    public TabelaPromocao getTabelaPromocao() {
-        return tabelaPromocao;
+    public Integer getId_produto() {
+        return id_produto;
     }
 
-    public void setTabelaPromocao(TabelaPromocao tabelaPromocao) {
-        this.tabelaPromocao = tabelaPromocao;
+    public void setId_produto(Integer id_produto) {
+        this.id_produto = id_produto;
     }
 }

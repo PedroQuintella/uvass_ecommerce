@@ -13,7 +13,9 @@ public class Produto {
     private LocalDate dataCadastro;
     private Timestamp dataUltimaAtualizacao;
     private Float valorUnitario;
+    private Administrador administrador;
     private List<Categoria> listaCategorias;
+    private List<PromocaoItem> listaPromocaoItem;
 
 
     public Integer getId() {
@@ -74,7 +76,27 @@ public class Produto {
         this.valorUnitario = valorUnitario;
     }
 
+    public Administrador getAdministrador() {
+        return administrador;
+    }
+
+    public void setAdministrador(Administrador administrador) {
+        this.administrador = administrador;
+    }
+
     public List<Categoria> getListaCategorias() {
         return listaCategorias;
+    }
+
+    public void setListaCategorias(List<Categoria> listaCategorias) {
+        this.listaCategorias = listaCategorias;
+    }
+
+    public List<PromocaoItem> getListaPromocaoItem() {
+        return listaPromocaoItem;
+    }
+
+    public void setListaPromocaoItem(List<PromocaoItem> listaPromocaoItem) {
+        this.listaPromocaoItem = listaPromocaoItem;
     }
 }
